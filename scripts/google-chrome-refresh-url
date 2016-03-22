@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+# open/refresh url
+
+[[ $OSTYPE != *darwin* ]] && echo "OSX only, sorry" && exit 0
+
+[[ $# == 0 ]] && [[ $1 == "--help" ]] && {
+  cat <<EOF
+usage: ${BASH_SOURCE[0]##*/} url
+EOF
+  exit 0
+}
+
+url="$1"
+osascript <<EOF
+tell application "Google Chrome"                   
+  repeat with w in  every window
+    repeat with t in every tab in w     
+        if (URL of t) is "$url" then
+          tell t to reload
+          return
+        end if
+      end repeat
+  end repeat
+  make new window
+  set URL of active tab of window 0 to "$url"
+end tell
+EOF
