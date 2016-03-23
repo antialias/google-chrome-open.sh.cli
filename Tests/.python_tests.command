@@ -1,1 +1,0 @@
-/Users/russianidiot/.command/.python_tests.command

@@ -13,7 +13,7 @@ name="${name/.py/}"
 
 url="https://pypi.python.org/pypi/$name/json"
 
-json=$(curl -s "$url") && || { 
+json=$(curl -s "$url") || { 
 	echo "SKIP: pypi.python.org/pypi/$name NOT EXISTS"
 	exit 0
 }

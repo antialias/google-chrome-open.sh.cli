@@ -1,36 +1,56 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-__all__ = [] # args passed to setup(name=name,**kwargs)
 import imp
 import os
-import sys
 from os.path import *
-
-setuptools=True
-if sys.argv[-1]=="--manifest-only":
-    setuptools=False
-
-try:
-    # pypi.python.org/pypi/setuptools
-    # features:
-    # python setup.py develop
-    if setuptools:
-        from setuptools import setup
-    else:
-        from distutils.core import setup
-except ImportError:
-    # standart library
-    # features:
-    # python setup.py sdist --manifest-only
-    from distutils.core import setup
 import sys
 import warnings
 
-# https://docs.python.org/2/distutils/setupscript.html
-# https://docs.python.org/3/distutils/setupscript.html
+# 1) distutils (Python Standart Library)
+#   docs.python.org/2/distutils/setupscript.html
+#   docs.python.org/3/distutils/setupscript.html
+# python setup.py --manifest-only
+# 2) setuptools (+easy_install tool)
+#   pypi.python.org/pypi/setuptools
+#   pythonhosted.org/setuptools/setuptools.html
 
-def pyfiles(repo):
-    list = os.listdir(repo)
+# setuptools additional setup(name,**kwargs) keywords
+setuptools_kwargs=[
+    "include_package_data", # True/False
+    "exclude_package_data", # True/False
+    "package_data", # True/False
+    "zip_safe", # True/False
+    "install_requires", # [...]
+    "entry_points", # [...]
+    "extras_require", # [...]
+    "setup_requires", # [...]
+    "dependency_links", # [...]
+    "namespace_packages", # [...]
+    "test_suite", # ''
+    "tests_require", # ''
+    "test_loader" # ''
+]
+# setuptools `python setup.py` Extra commands (python setup.py --help):
+setuptools_args=[
+  "saveopts",          # save supplied options to setup.cfg or other config file
+  "testr",             # Run unit tests using testr
+  "develop",           # install package in 'development mode'
+  "upload_docs",       # Upload documentation to PyPI
+  "test",              # run unit tests after in-place build
+  "setopt",            # set an option in setup.cfg or another config file
+  "nosetests",         # Run unit tests using nosetests
+  "install_egg_info",  # Install an .egg-info directory for the package
+  "rotate",            # delete older distributions, keeping N newest files
+  "bdist_mpkg",        # create a Mac OS X mpkg distribution for Installer.app
+  "egg_info",          # create a distribution's .egg-info directory
+  "py2app",            # create a Mac OS X application or plugin from Python scripts
+  "alias",             # define a shortcut to invoke one or more commands
+  "easy_install",      # Find/get/install Python packages
+  "bdist_egg"          # create an "egg" distribution
+]
+
+def pyfiles(dir):
+    list = os.listdir(dir)
     list = filter(lambda l:splitext(l)[1]==".py" and l.find("__")<0,list)
     return list
 
@@ -57,13 +77,11 @@ def update(**kwargs):
         setattr(sys.modules["__main__"],k,v)
 
 def main():
-    repo = dirname(dirname(__file__))
-    if not repo or repo==".": repo=os.getcwd()
-
-    os.chdir(repo)
-    sys.path+=[dirname(__file__)]
-
     sys.modules["__main__"].__all__ = []
+    dir = dirname(dirname(__file__))
+    if not dir or dir==".": dir=os.getcwd()
+    os.chdir(dir)
+    sys.path+=[dir,dirname(__file__)]
 
     files = pyfiles(dirname(__file__))
     # RuntimeWarning: Parent module 'modname' not found while handling absolute import
@@ -111,6 +129,27 @@ def main():
             print("    %s = %s%s" % (k,'"%s"' % v if isstring(v) else v,"," if i!=len(kwargs) else ""))
         print(')')  
 
+    setuptools=False # check for setuptools
+    # `python setup.py` args
+    for arg in setuptools_args:
+        if arg in sys.argv:
+            setuptools=True
+    # setup(name,**kwargs) kwargs
+    for arg in setuptools_kwargs:
+        if arg in kwargs and kwargs[arg] is not None:
+            v = kwargs[arg]
+            if v!=[] and v!="" and v!={} and v!=False:
+                setuptools=True
+
+    if sys.argv[-1]=="--manifest-only": # distutils only
+        setuptools=False
+
+    from distutils.core import setup # default
+    if setuptools:
+        try:
+            from setuptools import setup
+        except ImportError:
+            print("setuptools not installed") # use distutils
     if len(sys.argv)==1: return
     setup(name=name,**kwargs)
 

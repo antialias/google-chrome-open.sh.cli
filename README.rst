@@ -13,7 +13,7 @@ github.com_: :code:`pip install git+git://github.com/russianidiot/google-chrome-
 
 pypi.python.org_: :code:`pip install google-chrome-refresh-url`
 
-download_: :code:`python setup.py install`
+download_: :code:`python setup.py install && [ -e requirements.txt ] && pip install -r requirements.txt`
 
 .. _github.com: http://github.com/russianidiot/google-chrome-refresh-url
 .. _pypi.python.org: https://pypi.python.org/pypi/google-chrome-refresh-url
@@ -34,7 +34,7 @@ Usage
 
 	$ google-chrome-refresh-url "$url"
 
-------------
+----
 
 Feedback
 ~~~~~~~~
@@ -48,3 +48,5 @@ Feedback
 
 .. |gitter| image:: https://badges.gitter.im/russianidiot/google-chrome-refresh-url.svg
 	:target: https://gitter.im/russianidiot/google-chrome-refresh-url
+
+* * *

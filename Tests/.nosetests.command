@@ -1,1 +1,0 @@
-/Users/russianidiot/.command/.nosetests.command

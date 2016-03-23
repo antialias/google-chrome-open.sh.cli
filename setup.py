@@ -12,6 +12,8 @@ if not repo or repo==".": repo=os.getcwd()
 setup = join(repo,".setup")
 if exists(setup) and isdir(setup):
 	sys.path.append(setup)
+else:
+	raise Exception("%s NOT EXISTS" % setup)
 
 if __name__=="__main__":
 	import __setup__
