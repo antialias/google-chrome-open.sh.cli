@@ -14,7 +14,7 @@
 
 [pypi.python.org](https://pypi.python.org/pypi/google-chrome-refresh-url/): `pip install google-chrome-refresh-url`
 
-[download](https://github.com/russianidiot/google-chrome-refresh-url/archive/master.zip): `python setup.py install && [ -e requirements.txt ] && pip install -r requirements.txt`
+[download](https://github.com/russianidiot/google-chrome-refresh-url/archive/master.zip): `[ -e requirements.txt ] && pip install -r requirements.txt; python setup.py install`
 
 	
 

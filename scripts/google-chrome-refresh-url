@@ -20,8 +20,8 @@ tell application "Google Chrome"
       set tab_i to (tab_i+1)
         if (URL of t) is "$url" then
           tell t to reload
-          --set index of w to 1 --activate window
-          --tell w to set active tab index to tab_i
+          set index of w to 1 --activate window
+          tell w to set active tab index to tab_i --activate tab
           return
         end if
       end repeat
