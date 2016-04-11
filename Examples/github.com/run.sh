@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+[[ $OSTYPE != *darwin* ]] && echo "SKIP: not OSX" && exit 0
+
+url="https://github.com/"
+( set -x; google-chrome-refresh-url "$url" )
+

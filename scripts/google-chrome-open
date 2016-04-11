@@ -19,7 +19,8 @@ tell application "Google Chrome"
     repeat with t in every tab in w     
       set tab_i to (tab_i+1)
         if (URL of t) is "$url" then
-          tell t to reload
+          --tell t to reload
+          --use google-chrome-refresh to refresh
           set index of w to 1 --activate window
           tell w to set active tab index to tab_i --activate tab
           return
