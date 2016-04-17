@@ -1,10 +1,12 @@
-![bash](https://img.shields.io/badge/language-bash-blue.svg)
+![bash](https://img.shields.io/badge/language-bash-blue.svg)[![Platform (Linux, OS X)](https://img.shields.io/badge/platform-Linux,%20OS%20X-green.svg?style=flat-square)]()
 
-[![Build Status](https://travis-ci.org/russianidiot/google-chrome.sh.cli.svg?branch=master)](https://travis-ci.org/russianidiot/google-chrome.sh.cli)[![drone.io](https://drone.io/github.com/russianidiot/google-chrome.sh.cli/status.png)](https://drone.io/github.com/russianidiot/google-chrome.sh.cli)[![codeship](https://img.shields.io/codeship/1147dd20-e323-0133-d6b6-2adfd896b34c.svg)](https://codeship.com/projects/145868)[![Wercker](https://img.shields.io/wercker/ci/russianidiot/google-chrome.sh.cli.svg)](https://app.wercker.com/#applications/None/)
+[![Build Status](https://travis-ci.org/russianidiot/google-chrome.sh.cli.svg?branch=master)](https://travis-ci.org/russianidiot/google-chrome.sh.cli)[![drone.io](https://drone.io/github.com/russianidiot/google-chrome.sh.cli/status.png)](https://drone.io/github.com/russianidiot/google-chrome.sh.cli)[![Wercker](https://img.shields.io/wercker/ci/russianidiot/google-chrome.sh.cli.svg)](https://app.wercker.com/#applications/None/)
 
 [![PyPI](https://img.shields.io/pypi/v/google-chrome.svg)](https://pypi.python.org/pypi/google-chrome)
 [![PyPI](https://img.shields.io/pypi/dm/google-chrome.svg)](https://pypi.python.org/pypi/google-chrome)
 [![PyPI](https://img.shields.io/pypi/dd/google-chrome.svg)](https://pypi.python.org/pypi/google-chrome)
+
+[![npm](https://img.shields.io/npm/v/google-chrome.svg)](https://www.npmjs.com/package/google-chrome)[![npm](https://img.shields.io/npm/dm/google-chrome.svg)](https://www.npmjs.com/package/google-chrome)[![npm](https://img.shields.io/npm/dt/google-chrome.svg)](https://www.npmjs.com/package/google-chrome)
 
 <p align="center">
 	<b>Google Chrome scripts</b>
@@ -14,6 +16,9 @@
 
 pip: 
 `[sudo] pip install google-chrome`
+
+npm: 
+`npm install -g google-chrome`
 
 #### Usage
 
@@ -38,7 +43,9 @@ $ google-chrome-close "$url"
 [Examples/](https://github.com/russianidiot/google-chrome.sh.cli/tree/master/Examples)
 
 Sources:
-*	[scripts/google-chrome-close](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-close)*	[scripts/google-chrome-refresh](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-refresh)*	[scripts/google-chrome-open](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-open)
+*	[scripts/google-chrome-open](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-open)
+*	[scripts/google-chrome-refresh](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-refresh)
+*	[scripts/google-chrome-close](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-close)
 
 Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/google-chrome.sh.cli.svg)](https://github.com/russianidiot/google-chrome.sh.cli/issues)

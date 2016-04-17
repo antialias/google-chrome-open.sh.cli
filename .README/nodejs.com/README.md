@@ -29,7 +29,9 @@ $ google-chrome-close "$url"
 [Examples/](https://github.com/russianidiot/google-chrome.sh.cli/tree/master/Examples)
 
 Sources:
-*	[scripts/google-chrome-open](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-open)*	[scripts/google-chrome-refresh](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-refresh)*	[scripts/google-chrome-close](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-close)
+*	[scripts/google-chrome-open](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-open)
+*	[scripts/google-chrome-refresh](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-refresh)
+*	[scripts/google-chrome-close](https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-close)
 
 Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/google-chrome.sh.cli.svg)](https://github.com/russianidiot/google-chrome.sh.cli/issues)

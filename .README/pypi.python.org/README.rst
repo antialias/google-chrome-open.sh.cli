@@ -1,4 +1,5 @@
 .. image:: https://img.shields.io/badge/language-bash-blue.svg
+.. image:: https://img.shields.io/badge/platform-Linux,%20OS%20X-green.svg?style=flat-square
 
 Install
 ```````
@@ -34,13 +35,11 @@ Usage
 Sources:
 
 *	`scripts/google-chrome-open`_
-
-.. _`scripts/google-chrome-open`: https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-open
 *	`scripts/google-chrome-refresh`_
-
-.. _`scripts/google-chrome-refresh`: https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-refresh
 *	`scripts/google-chrome-close`_
 
+.. _`scripts/google-chrome-open`: https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-open
+.. _`scripts/google-chrome-refresh`: https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-refresh
 .. _`scripts/google-chrome-close`: https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-close
 
 Feedback |github_issues| |gitter| |github_follow|
