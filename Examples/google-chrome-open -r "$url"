@@ -4,5 +4,5 @@
 [[ $OSTYPE != *darwin* ]] && echo "SKIP: not OSX" && exit 0
 
 url="https://github.com/"
-( set -x; google-chrome-refresh-url "$url" )
+( set -x; google-chrome-open -r "$url" )
 

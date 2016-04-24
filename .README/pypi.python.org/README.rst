@@ -4,54 +4,44 @@
 Install
 ```````
 
-:code:`[sudo] pip install google-chrome`
+:code:`[sudo] pip install google-chrome-open`
 
 Usage
 `````
 
 .. code:: shell
 	
-	# google-chrome-open - open url
-	usage: google-chrome-open url
-	
-	$ google-chrome-refresh "$url"
-	
-	# google-chrome-refresh - refresh tab
-	usage: google-chrome-refresh url
-	
-	$ google-chrome-refresh "$url"
-	
-	# google-chrome-close - close tab
-	usage: google-chrome-close url
-	
-	$ google-chrome-close "$url"
-	
-	
+	usage: google-chrome-open [options] url
+		-f  Frontmost
+	    -r  Refresh
 
-`Examples/`_
+Example
+```````
 
-.. _Examples/: https://github.com/russianidiot/google-chrome.sh.cli/tree/master/Examples
+.. code:: shell
+	
+	$ url="https://github.com/"
+	$ google-chrome-open "$url"
+	$ google-chrome-open -f "$url" # make tab frontmost
+	$ google-chrome-open -r "$url" # refresh tab
+	$ google-chrome-open -f -r "$url" # refresh and make frontmost :)
 
 Sources:
 
 *	`scripts/google-chrome-open`_
-*	`scripts/google-chrome-refresh`_
-*	`scripts/google-chrome-close`_
 
-.. _`scripts/google-chrome-open`: https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-open
-.. _`scripts/google-chrome-refresh`: https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-refresh
-.. _`scripts/google-chrome-close`: https://github.com/russianidiot/google-chrome.sh.cli/blob/master/scripts/google-chrome-close
+.. _`scripts/google-chrome-open`: https://github.com/russianidiot/google-chrome-open.sh.cli/blob/master/scripts/google-chrome-open
 
 Feedback |github_issues| |gitter| |github_follow|
 
-.. |github_issues| image:: https://img.shields.io/github/issues/russianidiot/google-chrome.sh.cli.svg
-	:target: https://github.com/russianidiot/google-chrome.sh.cli/issues
+.. |github_issues| image:: https://img.shields.io/github/issues/russianidiot/google-chrome-open.sh.cli.svg
+	:target: https://github.com/russianidiot/google-chrome-open.sh.cli/issues
 
 .. |github_follow| image:: https://img.shields.io/github/followers/russianidiot.svg?style=social&label=Follow
 	:target: https://github.com/russianidiot
 
-.. |gitter| image:: https://badges.gitter.im/russianidiot/google-chrome.sh.cli.svg
-	:target: https://gitter.im/russianidiot/google-chrome.sh.cli
+.. |gitter| image:: https://badges.gitter.im/russianidiot/google-chrome-open.sh.cli.svg
+	:target: https://gitter.im/russianidiot/google-chrome-open.sh.cli
 
 ----
 
@@ -65,7 +55,7 @@ Feedback |github_issues| |gitter| |github_follow|
 
 `README.rst`_  - generated with `readmemako.py`_ (python+ `mako`_ templates) and `.README`_ dotfiles
 
-.. _README.rst: https://github.com/russianidiot/google-chrome.sh.cli/blob/master/.README/pypi.python.org/README.rst
+.. _README.rst: https://github.com/russianidiot/google-chrome-open.sh.cli/blob/master/.README/pypi.python.org/README.rst
 .. _readmemako.py: http://github.com/russianidiot/readmemako.py/
 .. _mako: http://www.makotemplates.org/
 .. _.README: https://github.com/russianidiot-dotfiles/.README

@@ -8,10 +8,11 @@ IFS=
 
 ! [ -e setup.py ] && echo "SKIP: setup.py NOT EXISTS" && exit 0
 
+[[ -z $VIRTUAL_ENV ]] && echo "SKIP: not virtualenv" && exit 0
 # folder name must be same as original repo name
 # wercker.com set folder to /pipeline/source/
 IFS=.;set -- ${PWD##*/};IFS=
-name="$1"
+name="$(echo "$1" | awk '{print tolower($0)}')"
 
 url="https://pypi.python.org/pypi/$name/json"
 

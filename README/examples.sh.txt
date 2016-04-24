@@ -1,0 +1,5 @@
+$ url="https://github.com/"
+$ google-chrome-open "$url"
+$ google-chrome-open -f "$url" # make tab frontmost
+$ google-chrome-open -r "$url" # refresh tab
+$ google-chrome-open -f -r "$url" # refresh and make frontmost :)

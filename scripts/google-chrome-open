@@ -6,12 +6,21 @@
 
 [[ $# == 0 ]] && [[ $1 == "--help" ]] && {
   cat <<EOF
-usage: ${BASH_SOURCE[0]##*/} url
+usage: ${BASH_SOURCE[0]##*/} [options] url
+    -f  Frontmost
+    -r  Refresh
 EOF
-  exit 0
+  [[ $1 == "--help" ]]; exit # exit 0 if --help
 }
 
-url="$1"
+frontmost=false
+refresh=false
+while [[ $# != 0 ]]; do
+  [[ $1 == "-f" ]] && frontmost=true
+  [[ $1 == "-r" ]] && refresh=true
+  [[ $# == 1 ]] && url="$1"
+  shift
+done;:
 osascript <<EOF
 tell application "Google Chrome"                   
   repeat with w in  every window
@@ -19,10 +28,13 @@ tell application "Google Chrome"
     repeat with t in every tab in w     
       set tab_i to (tab_i+1)
         if (URL of t) is "$url" then
-          --tell t to reload
-          --use google-chrome-refresh to refresh
-          set index of w to 1 --activate window
-          tell w to set active tab index to tab_i --activate tab
+          if $refresh = true then
+            tell t to reload
+          end if
+          if $frontmost = true then
+            set index of w to 1 --activate window
+            tell w to set active tab index to tab_i --activate tab
+          end if
           return
         end if
       end repeat
