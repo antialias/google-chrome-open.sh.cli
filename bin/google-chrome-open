@@ -15,12 +15,17 @@ EOF
 
 frontmost=false
 refresh=false
-while [[ $# != 0 ]]; do
-  [[ $1 == "-f" ]] && frontmost=true
-  [[ $1 == "-r" ]] && refresh=true
-  [[ $# == 1 ]] && url="$1"
-  shift
-done;:
+while getopts "fr:" OPTION; do
+    case $OPTION in
+        f)
+            frontmost=true
+            ;;
+        r)
+            refresh=true
+            ;;
+    esac
+done
+
 osascript <<EOF
 tell application "Google Chrome"                   
   repeat with w in  every window
