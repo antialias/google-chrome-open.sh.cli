@@ -1,7 +1,3 @@
-<p align="center">
-	<b>open/refresh url in Google Chrome</b>
-</p>
-
 #### Install
 
 `npm install -g google-chrome-open`
@@ -11,7 +7,7 @@
 ```shell
 usage: google-chrome-open [options] url
 	-f  Frontmost
-    -r  Refresh
+	-r  Refresh
 ```
 
 #### Example
@@ -24,8 +20,7 @@ $ google-chrome-open -r "$url" # refresh tab
 $ google-chrome-open -f -r "$url" # refresh and make frontmost :)
 ```
 
-Sources:
-*	[scripts/google-chrome-open](https://github.com/russianidiot/google-chrome-open.sh.cli/blob/master/scripts/google-chrome-open)
+[Examples/](https://github.com/russianidiot/google-chrome-open.sh.cli/tree/master/Examples)
 
 Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/google-chrome-open.sh.cli.svg)](https://github.com/russianidiot/google-chrome-open.sh.cli/issues)

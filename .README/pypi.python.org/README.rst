@@ -1,5 +1,4 @@
 .. image:: https://img.shields.io/badge/language-bash-blue.svg
-.. image:: https://img.shields.io/badge/platform-Linux,%20OS%20X-green.svg?style=flat-square
 
 Install
 ```````
@@ -13,7 +12,7 @@ Usage
 	
 	usage: google-chrome-open [options] url
 		-f  Frontmost
-	    -r  Refresh
+		-r  Refresh
 
 Example
 ```````
@@ -26,11 +25,9 @@ Example
 	$ google-chrome-open -r "$url" # refresh tab
 	$ google-chrome-open -f -r "$url" # refresh and make frontmost :)
 
-Sources:
+`Examples/`_
 
-*	`scripts/google-chrome-open`_
-
-.. _`scripts/google-chrome-open`: https://github.com/russianidiot/google-chrome-open.sh.cli/blob/master/scripts/google-chrome-open
+.. _Examples/: https://github.com/russianidiot/google-chrome-open.sh.cli/tree/master/Examples
 
 Feedback |github_issues| |gitter| |github_follow|
 

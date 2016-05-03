@@ -1,16 +1,12 @@
-![bash](https://img.shields.io/badge/language-bash-blue.svg)[![Platform (Linux, OS X)](https://img.shields.io/badge/platform-Linux,%20OS%20X-green.svg?style=flat-square)]()
+![bash](https://img.shields.io/badge/language-bash-blue.svg)
 
-[![Build Status](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli.svg?branch=master)](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli)[![drone.io](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli/status.png)](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli)[![Wercker](https://img.shields.io/wercker/ci/russianidiot/google-chrome-open.sh.cli.svg)](https://app.wercker.com/#applications/None/)
+[![Build Status](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli.svg?branch=master)](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli)[![drone.io](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli/status.png)](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli)[![Wercker](https://img.shields.io/wercker/ci/russianidiot/google-chrome-open.sh.cli.svg)](https://app.wercker.com/#applications/57201c4f58d2b35867095a26/)
 
 [![PyPI](https://img.shields.io/pypi/v/google-chrome-open.svg)](https://pypi.python.org/pypi/google-chrome-open)
 [![PyPI](https://img.shields.io/pypi/dm/google-chrome-open.svg)](https://pypi.python.org/pypi/google-chrome-open)
 [![PyPI](https://img.shields.io/pypi/dd/google-chrome-open.svg)](https://pypi.python.org/pypi/google-chrome-open)
 
 [![npm](https://img.shields.io/npm/v/google-chrome-open.svg)](https://www.npmjs.com/package/google-chrome-open)[![npm](https://img.shields.io/npm/dm/google-chrome-open.svg)](https://www.npmjs.com/package/google-chrome-open)[![npm](https://img.shields.io/npm/dt/google-chrome-open.svg)](https://www.npmjs.com/package/google-chrome-open)
-
-<p align="center">
-	<b>open/refresh url in Google Chrome</b>
-</p>
 
 #### Install
 
@@ -25,7 +21,7 @@ npm:
 ```shell
 usage: google-chrome-open [options] url
 	-f  Frontmost
-    -r  Refresh
+	-r  Refresh
 ```
 
 #### Example
@@ -38,8 +34,7 @@ $ google-chrome-open -r "$url" # refresh tab
 $ google-chrome-open -f -r "$url" # refresh and make frontmost :)
 ```
 
-Sources:
-*	[scripts/google-chrome-open](https://github.com/russianidiot/google-chrome-open.sh.cli/blob/master/scripts/google-chrome-open)
+[Examples/](https://github.com/russianidiot/google-chrome-open.sh.cli/tree/master/Examples)
 
 Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/google-chrome-open.sh.cli.svg)](https://github.com/russianidiot/google-chrome-open.sh.cli/issues)
