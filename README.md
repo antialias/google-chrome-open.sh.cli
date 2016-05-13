@@ -8,6 +8,10 @@
 
 [![npm](https://img.shields.io/npm/v/google-chrome-open.svg)](https://www.npmjs.com/package/google-chrome-open)[![npm](https://img.shields.io/npm/dm/google-chrome-open.svg)](https://www.npmjs.com/package/google-chrome-open)[![npm](https://img.shields.io/npm/dt/google-chrome-open.svg)](https://www.npmjs.com/package/google-chrome-open)
 
+<p align="center">
+    <b>open/refresh url in Google Chrome</b>
+</p>
+
 #### Install
 
 pip: 

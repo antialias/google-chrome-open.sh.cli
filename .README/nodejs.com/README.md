@@ -1,3 +1,7 @@
+<p align="center">
+    <b>open/refresh url in Google Chrome</b>
+</p>
+
 #### Install
 
 `npm install -g google-chrome-open`
