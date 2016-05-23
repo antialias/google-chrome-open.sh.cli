@@ -43,6 +43,6 @@ Feedback
 </p>
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/russianidiot/google-chrome-open.sh.cli/master/.README/nodejs.com/README.md">README.md</a> generated with <a href="https://github.com/russianidiot/readme-mako.py">readmemako.py</a> (python+<a href="http://www.makotemplates.org/">mako</a> templates) and <a href="https://github.com/russianidiot-dotfiles/.README">.README</a> dotfiles 
+	<a href="https://raw.githubusercontent.com/russianidiot/google-chrome-open.sh.cli/master/README.md">README.md</a> generated with <a href="https://github.com/russianidiot/readme-mako.py">readmemako.py</a> (python+<a href="http://www.makotemplates.org/">mako</a> templates) and <a href="https://github.com/russianidiot-dotfiles/.README">.README</a> dotfiles 
 <img src="http://russianidiot.github.io/images/book/16.png">
 </p>

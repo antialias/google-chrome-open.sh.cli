@@ -1,6 +1,6 @@
 ![bash](https://img.shields.io/badge/language-bash-blue.svg)
 
-[![Build Status](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli.svg?branch=master)](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli)[![drone.io](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli/status.png)](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli)[![Wercker](https://img.shields.io/wercker/ci/russianidiot/google-chrome-open.sh.cli.svg)](https://app.wercker.com/#applications/57201c4f58d2b35867095a26/)
+[![Build Status](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli.svg?branch=master)](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli)[![drone.io](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli/status.png)](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli)[![Wercker](https://app.wercker.com/status/9932df02a4eaef805f765bee62418b23/s/master)](https://app.wercker.com/#applications/57201c4f58d2b35867095a26/)
 
 [![PyPI](https://img.shields.io/pypi/v/google-chrome-open.svg)](https://pypi.python.org/pypi/google-chrome-open)
 [![PyPI](https://img.shields.io/pypi/dm/google-chrome-open.svg)](https://pypi.python.org/pypi/google-chrome-open)
