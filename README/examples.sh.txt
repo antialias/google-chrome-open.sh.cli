@@ -1,5 +1,11 @@
 $ url="https://github.com/"
 $ google-chrome-open "$url"
+
+# arguments:
 $ google-chrome-open -f "$url" # make tab frontmost
 $ google-chrome-open -r "$url" # refresh tab
 $ google-chrome-open -f -r "$url" # refresh and make frontmost :)
+
+# arguments:
+$ google-chrome-open "$url"
+$ open -a "Google Chrome" # make Chrome frontmost app
