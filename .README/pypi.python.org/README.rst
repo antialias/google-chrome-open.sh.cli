@@ -1,4 +1,5 @@
 .. image:: https://img.shields.io/badge/language-bash-blue.svg
+.. image:: https://img.shields.io/badge/platform-Linux,%20OS%20X-green.svg?style=flat-square
 
 Install
 ```````
@@ -21,13 +22,26 @@ Example
 	
 	$ url="https://github.com/"
 	$ google-chrome-open "$url"
+	
+	# arguments:
 	$ google-chrome-open -f "$url" # make tab frontmost
 	$ google-chrome-open -r "$url" # refresh tab
 	$ google-chrome-open -f -r "$url" # refresh and make frontmost :)
+	
+	# arguments:
+	$ google-chrome-open "$url"
+	$ open -a "Google Chrome" # make Chrome frontmost app
+	
 
 `Examples/`_
 
 .. _Examples/: https://github.com/russianidiot/google-chrome-open.sh.cli/tree/master/Examples
+
+Sources:
+
+*	`scripts/google-chrome-open`_
+
+.. _`scripts/google-chrome-open`: https://github.com/russianidiot/google-chrome-open.sh.cli/blob/master/bin/google-chrome-open
 
 Feedback |github_issues| |gitter| |github_follow|
 
