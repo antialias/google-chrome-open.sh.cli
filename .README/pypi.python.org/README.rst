@@ -1,5 +1,4 @@
-.. image:: https://img.shields.io/badge/language-bash-blue.svg
-.. image:: https://img.shields.io/badge/platform-Linux,%20OS%20X-green.svg?style=flat-square
+.. README generated with readmemako.py (github.com/russianidiot/readme-mako.py) and .README dotfiles (github.com/russianidiot-dotfiles/.README)
 
 Install
 ```````
@@ -8,18 +7,16 @@ Install
 
 Usage
 `````
+.. code:: bash
 
-.. code:: shell
+	# google-chrome-open --help
 	
-	usage: google-chrome-open [options] url
-		-f  Frontmost
-		-r  Refresh
 
 Example
 ```````
 
-.. code:: shell
-	
+.. code:: bash
+
 	$ url="https://github.com/"
 	$ google-chrome-open "$url"
 	
@@ -31,17 +28,10 @@ Example
 	# arguments:
 	$ google-chrome-open "$url"
 	$ open -a "Google Chrome" # make Chrome frontmost app
-	
 
 `Examples/`_
 
 .. _Examples/: https://github.com/russianidiot/google-chrome-open.sh.cli/tree/master/Examples
-
-Sources:
-
-*	`scripts/google-chrome-open`_
-
-.. _`scripts/google-chrome-open`: https://github.com/russianidiot/google-chrome-open.sh.cli/blob/master/bin/google-chrome-open
 
 Feedback |github_issues| |gitter| |github_follow|
 
@@ -63,10 +53,3 @@ Feedback |github_issues| |gitter| |github_follow|
 `russianidiot.github.io/cli/`_  - command line scripts
 
 .. _russianidiot.github.io/cli/: http://russianidiot.github.io/cli/
-
-`README.rst`_  - generated with `readmemako.py`_ (python+ `mako`_ templates) and `.README`_ dotfiles
-
-.. _README.rst: https://github.com/russianidiot/google-chrome-open.sh.cli/blob/master/README.rst
-.. _readmemako.py: http://github.com/russianidiot/readmemako.py/
-.. _mako: http://www.makotemplates.org/
-.. _.README: https://github.com/russianidiot-dotfiles/.README

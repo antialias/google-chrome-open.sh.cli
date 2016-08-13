@@ -1,22 +1,26 @@
+<!--
+README generated with readmemako.py (github.com/russianidiot/readme-mako.py) and .README dotfiles (github.com/russianidiot-dotfiles/.README)
+-->
+
 <p align="center">
     <b>open/refresh url in Google Chrome</b>
 </p>
 
 #### Install
 
-`npm install -g google-chrome-open`
+`[sudo] pip install google-chrome-open`
+
+`[sudo] sudo npm install -g google-chrome-open`
 
 #### Usage
+```bash
+# google-chrome-open --help
 
-```shell
-usage: google-chrome-open [options] url
-	-f  Frontmost
-	-r  Refresh
 ```
 
 #### Example
 
-```shell
+```bash
 $ url="https://github.com/"
 $ google-chrome-open "$url"
 
@@ -28,13 +32,9 @@ $ google-chrome-open -f -r "$url" # refresh and make frontmost :)
 # arguments:
 $ google-chrome-open "$url"
 $ open -a "Google Chrome" # make Chrome frontmost app
-
 ```
 
 [Examples/](https://github.com/russianidiot/google-chrome-open.sh.cli/tree/master/Examples)
-
-Sources:
-*	[scripts/google-chrome-open](https://github.com/russianidiot/google-chrome-open.sh.cli/blob/master/bin/google-chrome-open)
 
 Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/google-chrome-open.sh.cli.svg)](https://github.com/russianidiot/google-chrome-open.sh.cli/issues)
@@ -44,15 +44,10 @@ Feedback
 * * *
 
 <p align="center">
-	cli packages <a href="http://russianidiot.github.io/python/">russianidiot.github.io/cli/</a>
+	cli packages <a href="http://russianidiot.github.io/cli/">russianidiot.github.io/cli/</a>
 <img src="http://russianidiot.github.io/images/cli/16.png" />
 </p>
 
 <p align="center">
 	repos list <a href="http://russianidiot.github.io/">russianidiot.github.io</a> <img src="http://russianidiot.github.io/images/star/16.png" />
-</p>
-
-<p align="center">
-	<a href="https://raw.githubusercontent.com/russianidiot/google-chrome-open.sh.cli/master/README.md">README.md</a> generated with <a href="https://github.com/russianidiot/readme-mako.py">readmemako.py</a> (python+<a href="http://www.makotemplates.org/">mako</a> templates) and <a href="https://github.com/russianidiot-dotfiles/.README">.README</a> dotfiles 
-<img src="http://russianidiot.github.io/images/book/16.png">
 </p>
