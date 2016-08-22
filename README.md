@@ -11,7 +11,7 @@ README generated with readmemako.py (github.com/russianidiot/readme-mako.py) and
 [![semaphoreci.com](https://semaphoreci.com/api/v1/russianidiot/google-chrome-open-sh-cli/branches/master/shields_badge.svg)](https://semaphoreci.com/russianidiot/google-chrome-open-sh-cli)
 [![shippable.com](https://api.shippable.com/projects/570bc2532a8192902e1be7ce/badge?branch=master)](https://app.shippable.com/projects/570bc2532a8192902e1be7ce/status/)
 [![travis-ci.org](https://api.travis-ci.org/russianidiot/google-chrome-open.sh.cli.svg)](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli)
-[![wercker.com](https://app.wercker.com/status/9932df02a4eaef805f765bee62418b23/s/master)](https://app.wercker.com/#applications/57201c4f58d2b35867095a26)
+[![wercker.com](https://app.wercker.com/status/9932df02a4eaef805f765bee62418b23/s/master)](https://app.wercker.com/russianidiot/google-chrome-open.sh.cli/)
 
 <p align="center">
     <b>open/refresh url in Google Chrome</b>
@@ -51,18 +51,3 @@ Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/google-chrome-open.sh.cli.svg)](https://github.com/russianidiot/google-chrome-open.sh.cli/issues)
 [![Join the chat at https://gitter.im/russianidiot/google-chrome-open.sh.cli](https://badges.gitter.im/russianidiot/google-chrome-open.sh.cli.svg)](https://gitter.im/russianidiot/google-chrome-open.sh.cli)
 [![GitHub followers](https://img.shields.io/github/followers/russianidiot.svg?style=social&label=Follow)](https://github.com/russianidiot)
-
-* * *
-
-<p align="center">
-	Python packages <a href="http://russianidiot.github.io/python/">russianidiot.github.io/python/</a>
-	<img src="http://russianidiot.github.io/images/python/16.png" />
-</p>
-<p align="center">
-	cli packages <a href="http://russianidiot.github.io/cli/">russianidiot.github.io/cli/</a>
-<img src="http://russianidiot.github.io/images/cli/16.png" />
-</p>
-
-<p align="center">
-	repos list <a href="http://russianidiot.github.io/">russianidiot.github.io</a> <img src="http://russianidiot.github.io/images/star/16.png" />
-</p>

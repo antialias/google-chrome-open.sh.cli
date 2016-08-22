@@ -40,14 +40,3 @@ Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/google-chrome-open.sh.cli.svg)](https://github.com/russianidiot/google-chrome-open.sh.cli/issues)
 [![Join the chat at https://gitter.im/russianidiot/google-chrome-open.sh.cli](https://badges.gitter.im/russianidiot/google-chrome-open.sh.cli.svg)](https://gitter.im/russianidiot/google-chrome-open.sh.cli)
 [![GitHub followers](https://img.shields.io/github/followers/russianidiot.svg?style=social&label=Follow)](https://github.com/russianidiot)
-
-* * *
-
-<p align="center">
-	cli packages <a href="http://russianidiot.github.io/cli/">russianidiot.github.io/cli/</a>
-<img src="http://russianidiot.github.io/images/cli/16.png" />
-</p>
-
-<p align="center">
-	repos list <a href="http://russianidiot.github.io/">russianidiot.github.io</a> <img src="http://russianidiot.github.io/images/star/16.png" />
-</p>
