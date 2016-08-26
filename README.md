@@ -2,17 +2,6 @@
 README generated with readmemako.py (github.com/russianidiot/readme-mako.py) and .README dotfiles (github.com/russianidiot-dotfiles/.README)
 -->
 
-![bash](https://img.shields.io/badge/language-bash-blue.svg)[![Platform (Linux, OS X)](https://img.shields.io/badge/platform-Linux,%20OS%20X-green.svg?style=flat-square)]()
-[![PyPI](https://img.shields.io/pypi/v/google-chrome-open.svg)](https://pypi.python.org/pypi/google-chrome-open)
-[![npm](https://img.shields.io/npm/v/google-chrome-open.svg)](https://www.npmjs.com/package/google-chrome-open)
-
-[![drone.io](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli/status.png)](https://drone.io/github.com/russianidiot/google-chrome-open.sh.cli)
-[![scrutinizer-ci.com](https://scrutinizer-ci.com/g/russianidiot/google-chrome-open.sh.cli/badges/build.png?b=master)](https://scrutinizer-ci.com/g/russianidiot/google-chrome-open.sh.cli/)
-[![semaphoreci.com](https://semaphoreci.com/api/v1/russianidiot/google-chrome-open-sh-cli/branches/master/shields_badge.svg)](https://semaphoreci.com/russianidiot/google-chrome-open-sh-cli)
-[![shippable.com](https://api.shippable.com/projects/570bc2532a8192902e1be7ce/badge?branch=master)](https://app.shippable.com/projects/570bc2532a8192902e1be7ce/status/)
-[![travis-ci.org](https://api.travis-ci.org/russianidiot/google-chrome-open.sh.cli.svg)](https://travis-ci.org/russianidiot/google-chrome-open.sh.cli)
-[![wercker.com](https://app.wercker.com/status/9932df02a4eaef805f765bee62418b23/s/master)](https://app.wercker.com/russianidiot/google-chrome-open.sh.cli/)
-
 <p align="center">
     <b>open/refresh url in Google Chrome</b>
 </p>
